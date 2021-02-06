@@ -1,5 +1,5 @@
 {
-  "name": "jolly-roger-common",
+  "name": "conquest-eth-common",
   "description": "common library used by other modules",
   "version": "0.0.1",
   "main": "./lib/cjs/index.js",

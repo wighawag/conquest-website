@@ -1,7 +1,7 @@
 {
-  "name": "jolly-roger",
+  "name": "conquest-eth",
   "version": "0.0.1",
-  "description": "Jolly Roger",
+  "description": "coqnuest.eth",
   "license": "UNLICENSED",
   "private": true,
   "devDependencies": {
@@ -32,8 +32,8 @@
   },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "setup": "npx change-name jolly-roger && pnpm install",
-    "set-name": "npx change-name jolly-roger",
+    "setup": "npx change-name conquest-eth && pnpm install",
+    "set-name": "npx change-name conquest-eth",
     "prepare": "node ./.setup.js",
 
     "lint": "eslint \"**/*.{js,ts}\" && solhint contracts/src/**/*.sol",

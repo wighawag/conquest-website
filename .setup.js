@@ -16,7 +16,7 @@ function writeIfNotExists(p, content) {
 }
 
 [
-  'jolly-roger.code-workspace',
+  'conquest-eth.code-workspace',
   '.env',
   '.env.production',
   '.env.staging',

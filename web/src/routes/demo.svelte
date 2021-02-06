@@ -5,7 +5,7 @@
   import {messages} from '../stores/messages';
   import {wallet, flow, chain} from '../stores/wallet';
   import {logs} from 'named-logs';
-  import {test} from 'jolly-roger-common';
+  import {test} from 'conquest-eth-common';
 
   async function setMessage() {
     await flow.execute((contracts) =>

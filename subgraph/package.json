@@ -1,6 +1,6 @@
 {
-  "name": "jolly-roger-subgraph",
-  "description": "Subgraph (thegraph.com) for Jolly Roger",
+  "name": "conquest-eth-subgraph",
+  "description": "Subgraph (thegraph.com) for coqnuest.eth",
   "private": true,
   "version": "0.0.1",
   "devDependencies": {

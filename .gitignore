@@ -2,6 +2,6 @@ node_modules/
 .newsh.json
 .env*
 !.env*.default
-jolly-roger.code-workspace
+conquest-eth.code-workspace
 .vscode/*
 !.vscode/settings.json.default

@@ -13,7 +13,7 @@
     "@urql/core": "^1.12.3",
     "@urql/devtools": "^2.0.2",
     "graphql": "^15.3.0",
-    "jolly-roger-common": "workspace:*",
+    "conquest-eth-common": "workspace:*",
     "named-logs": "0.0.13",
     "named-logs-console": "0.0.14",
     "svelte": "^3.24.0",
@@ -69,7 +69,7 @@
     "test": "web-test-runner \"src/**/*.test.ts\"",
     "serve": "ipfs-emulator --only -d build -p 8080",
     "build:serve": "run-s build serve",
-    "deploy": "dotenv -- ipfs-deploy -p pinata -s jolly-roger-snowpack build",
+    "deploy": "dotenv -- ipfs-deploy -p pinata -s conquest-eth-snowpack build",
     "build:deploy": "run-s build deploy"
   }
 }

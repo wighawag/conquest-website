@@ -1,16 +1,16 @@
 <!--- -------------------------------------------- -->
 
-# Jolly Roger
+# coqnuest.eth
 
 This is a template to build a decentralised applicaiton using ethereum, hardhat, svelte and thegraph
 
 to make an app out of it, execute the following
 
 ```
-npx degit wighawag/jolly-roger <your-app-folder>
+npx degit wighawag/conquest-eth <your-app-folder>
 ```
 
-Alternatively create a repo from this template [here](https://github.com/wighawag/jolly-roger/generate)
+Alternatively create a repo from this template [here](https://github.com/wighawag/conquest-eth/generate)
 
 ---
 

@@ -1,7 +1,7 @@
 <script lang="ts">
   import NavButton from '../components/navigation/NavButton.svelte';
   import Feature from '../components/Feature.svelte';
-  const name = 'Jolly Roger';
+  const name = 'coqnuest.eth';
 </script>
 
 <section class="py-8 px-4 text-center">
@@ -35,7 +35,7 @@
         <NavButton
           blank={true}
           class="big secondary"
-          href="https://github.com/wighawag/jolly-roger"
+          href="https://github.com/wighawag/conquest-eth"
           label="get it from github!">
           Github
         </NavButton>
@@ -44,7 +44,7 @@
   </div>
   <div class="py-4 dark:bg-black bg-white">
     <!-- <h2 class="text-3xl underline mb-4 text-gray-600 dark:text-gray-400">Create App</h2> -->
-    <code>npx degit wighawag/jolly-roger &lt;your-app-folder&gt;</code>
+    <code>npx degit wighawag/conquest-eth &lt;your-app-folder&gt;</code>
   </div>
   <div class="py-4 dark:bg-black bg-white">
     <h2 class="text-3xl underline mb-4 text-gray-600 dark:text-gray-400">

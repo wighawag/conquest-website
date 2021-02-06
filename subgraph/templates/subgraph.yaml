@@ -1,5 +1,5 @@
 specVersion: 0.0.2
-description: Jolly Roger
+description: coqnuest.eth
 schema:
   file: ./schema.graphql
 dataSources:
