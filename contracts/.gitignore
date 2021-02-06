@@ -1,0 +1,13 @@
+coverage*
+
+cache/
+artifacts/
+
+node_modules/
+.env
+contractsInfo.json
+deployments/harhdat/
+deployments/localhost/
+
+.vscode/*
+!.vscode/settings.json.default
