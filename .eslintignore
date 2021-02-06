@@ -1,12 +1,4 @@
-web/build
-web/public/pwa
-contracts/deployments
-contracts/artifacts
-contracts/cache
-contracts/coverage
+build
+public/pwa
 node_modules
-subgraph/abis
-subgraph/build
-subgraph/generated
-common-lib/lib
 package.json
