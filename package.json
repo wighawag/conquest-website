@@ -66,9 +66,9 @@
     "dev": "snowpack dev",
     "build": "snowpack build",
     "test": "web-test-runner \"src/**/*.test.ts\"",
-    "serve": "ipfs-emulator --only -d build -p 8080",
+    "serve": "ipfs-emulator --only -d docs -p 8080",
     "build:serve": "run-s build serve",
-    "deploy": "dotenv -- ipfs-deploy -p pinata -s conquest-eth-snowpack build",
+    "deploy": "dotenv -- ipfs-deploy -p pinata -s conquest-eth-snowpack docs",
     "build:deploy": "run-s build deploy"
   }
 }
