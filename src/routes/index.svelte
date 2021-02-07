@@ -38,7 +38,7 @@
 
 
 <div class="mx-auto max-w-7xl mt-2 border-b pb-2 border-gray-700">
-  <a href="https://etherplay.io" class="mx-2"><img alt="Etherplay" src="logo_wide_with_text_on_black.png" class="inline w-32" /></a>
+  <a href="https://etherplay.io" class="mx-2"><img alt="Etherplay" src="logo_presents_on_black.png" class="inline h-10" /></a>
 </div>
 <!-- <div class="mt-2 w-full h-1 bg-gray-700 max-w-7xl mx-auto"></div> -->
 
@@ -83,7 +83,7 @@
 </div>
 
 <section class="bg-black pb-8 px-4 text-center">
-  <div class="max-w-auto md:max-w-lg mx-auto">
+  <div class="max-w-auto md:max-w-xl mx-auto">
     <img
       class="mt-12 mb-8 mx-auto"
       src="logo.png"
@@ -97,7 +97,7 @@
       Comming soon...
      </p>
      <p class="m-6 text-gray-400 text-xl">
-      Get updates by registering to <a href="https://etherplay.io" class="text-green-400 underline">Etherplay</a>'s newsletter:
+      Get updates by registering to our <a href="https://etherplay.io" class="text-green-400 underline">Etherplay</a>'s newsletter:
      </p>
      <div class="max-w-md mx-auto mt-5 space-y-3 md:mt-8 md:space-y-5">
       <form id="subscribeForm" action="https://etherplay-newsletter-subscription.rim.workers.dev/" method="POST" class="sm:max-w-xl sm:mx-auto lg:mx-0">
