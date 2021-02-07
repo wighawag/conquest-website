@@ -1,0 +1,1 @@
+{"version":3,"names":[],"sources":["Router.svelte"],"sourcesContent":["<script lang=\"ts\">;\r\nimport { setup } from '@curi/svelte';\r\nexport let router;\r\nsetup(router);\r\n</script>\n\n<slot />\n"],"mappings":";;;;;;;;;;;SACS,KAAK,QAAQ,cAAc;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;OACzB,MAAM;CACjB,KAAK,CAAC,MAAM;;;;;;;;;;;;;;;;;"}

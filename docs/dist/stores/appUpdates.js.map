@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["C:\\dev\\wighawag\\conquest.github.io\\src\\stores\\appUpdates.ts"],
+  "sourcesContent": ["import {writable} from 'svelte/store';\n\nexport const updateAvailable = writable(false);\n"],
+  "mappings": "AAAA;AAEO,aAAM,kBAAkB,SAAS;",
+  "names": []
+}

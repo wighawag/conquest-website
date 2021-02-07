@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["C:\\dev\\wighawag\\conquest.github.io\\src\\lib\\graphql\\constants.ts"],
+  "sourcesContent": ["export const initialState: {\n  fetching: boolean;\n  stale: boolean;\n  error: unknown;\n  data?: Record<string, unknown>;\n  extensions?: Record<string, unknown>;\n} = {\n  fetching: false,\n  stale: false,\n  error: undefined,\n  data: undefined,\n  extensions: undefined,\n};\n"],
+  "mappings": "AAAO,aAAM,eAMT;AAAA,EACF,UAAU;AAAA,EACV,OAAO;AAAA,EACP,OAAO;AAAA,EACP,MAAM;AAAA,EACN,YAAY;AAAA;",
+  "names": []
+}

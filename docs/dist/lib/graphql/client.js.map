@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["C:\\dev\\wighawag\\conquest.github.io\\src\\lib\\graphql\\client.ts"],
+  "sourcesContent": ["import {Client, defaultExchanges} from '@urql/core';\nimport {devtoolsExchange} from '@urql/devtools';\n\nconst exchanges = defaultExchanges.concat();\n\nif (import.meta.env.MODE === 'development') {\n  exchanges.unshift(devtoolsExchange);\n}\n\nlet url: string = import.meta.env.SNOWPACK_PUBLIC_THE_GRAPH_HTTP;\ntry {\n  const queryParams = new URLSearchParams(location.search);\n  if (queryParams.has('subgraph')) {\n    url = queryParams.get('subgraph') as string;\n  }\n} catch (e) {}\n\nif (!url) {\n  console.error(\n    `no url specific either at build time or runtim (through query params) for subgraph`\n  );\n}\n\nconst client = new Client({\n  url,\n  exchanges,\n});\n\nexport default client;\n"],
+  "mappings": "AAAA;AACA;AAEA,MAAM,YAAY,iBAAiB;AAEnC,IAAI,YAAY,IAAI,SAAS;AAC3B,YAAU,QAAQ;AAAA;AAGpB,IAAI,MAAc,YAAY,IAAI;AAClC;AACE,QAAM,cAAc,IAAI,gBAAgB,SAAS;AACjD,MAAI,YAAY,IAAI;AAClB,UAAM,YAAY,IAAI;AAAA;AAAA,SAEjB;AAAA;AAET,IAAI,CAAC;AACH,UAAQ,MACN;AAAA;AAIJ,MAAM,SAAS,IAAI,OAAO;AAAA,EACxB;AAAA,EACA;AAAA;AAGF,eAAe;",
+  "names": []
+}

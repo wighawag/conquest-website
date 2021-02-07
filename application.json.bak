@@ -1,0 +1,16 @@
+{
+  "appName": "conquest.eth",
+  "appShortName": "conquest.eth",
+  "appDescription": "An unstoppable game of open-ended war and diplomacy running on Ethereum",
+  "appShortDescription": "An unstoppable game of open-ended war and diplomacy running on Ethereum",
+  "developerName": "Etherplay",
+  "developerURL": "https://etherplay.io",
+  "url": "https://conquest.eth.link",
+  "ensName": "conquest.eth",
+  "background": "#1f253a",
+  "theme_color": "#1f253a",
+  "appleStatusBarStyle": "black-translucent",
+  "display": "fullscreen",
+  "icon": "icon.png",
+  "maskable_icon": "android-chrome-512x512.png"
+}

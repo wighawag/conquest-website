@@ -42,5 +42,6 @@ module.exports = {
   },
   buildOptions: {
     sourcemap: true,
+	out: 'docs'
   },
 };

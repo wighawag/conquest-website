@@ -1,0 +1,1 @@
+import{a as n,d as u,e as p,f as a,g as c,m as i,n as l}from"./../../../chunk.SLQI5P74.js";function f(r){let t;return{c(){t=c("h1"),t.textContent="Test2"},m(e,s){p(e,t,s)},p:n,i:n,o:n,d(e){e&&a(t)}}}var o=class extends l{constructor(t){super();i(this,t,null,f,u,{})}},m=o;export{m as default};

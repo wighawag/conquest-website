@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["C:\\dev\\wighawag\\conquest.github.io\\src\\lib\\graphql\\mutate.ts"],
+  "sourcesContent": ["import type {DocumentNode} from 'graphql';\nimport type {OperationContext, OperationResult} from '@urql/core';\nimport client from './client';\n\nexport function mutate<\n  Data = unknown,\n  Variables extends Record<string, unknown> = Record<string, unknown>\n>(args: {\n  query: DocumentNode | string;\n  variables?: Variables;\n  context?: Partial<OperationContext>;\n}): Promise<OperationResult<Data>> {\n  return client.mutation(args.query, args.variables, args.context).toPromise();\n}\n"],
+  "mappings": "AAEA;AAEO,uBAGL;AAKA,SAAO,OAAO,SAAS,KAAK,OAAO,KAAK,WAAW,KAAK,SAAS;AAAA;",
+  "names": []
+}
