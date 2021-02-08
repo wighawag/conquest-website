@@ -103,7 +103,7 @@
       style="width:512px;"
       width="512px"/>
     <p class="m-6 text-gray-100 text-xl">
-     An unstoppable and open-ended game of strategy and diplomacy running on <a href="https://ethereum.org">ethereum</a>.
+     An unstoppable and open-ended game of strategy and diplomacy running on <a class="text-green-400 underline" href="https://ethereum.org" target="_blank">ethereum</a>.
     </p>
     <p class="m-6 mt-12 text-green-400 text-xl">
       Coming Soon...
