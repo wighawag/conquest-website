@@ -7,14 +7,16 @@
   "developerURL": "https://etherplay.io",
   "url": "https://alpha.conquest.eth.link",
   "ensName": "alpha.conquest.eth",
-  "background": "#1f253a",
-  "theme_color": "#1f253a",
+  "background": "#100f11",
+  "theme_color": "#100f11",
   "appleStatusBarStyle": "black-translucent",
   "display": "fullscreen",
   "icon": "icon.png",
-  "maskable_icons": [{
-    "src": "maskable_icon_512x512.png",
-    "type": "image/png",
-    "sizes": "512x512"
-  }]
+  "maskable_icons": [
+    {
+      "src": "maskable_icon_512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
 }
