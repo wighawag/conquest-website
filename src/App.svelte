@@ -5,8 +5,12 @@
   import Navigating from './lib/routing/curi/Navigating.svelte';
   import Loading from './components/Loading.svelte';
   import Notifications from './components/notification/Notifications.svelte';
+  import NoInstallPrompt from './components/NoInstallPrompt.svelte';
+  // import Install from './components/Install.svelte';
 </script>
 
+<!-- disable prompt -->
+<NoInstallPrompt/>
 <Router
   {routes}
   globalQueryStrings={['subgraph', 'debug', 'log', 'trace', '_d_eruda']}>
