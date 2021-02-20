@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 const fs = require('fs');
 function copyFromDefault(p) {
   if (!fs.existsSync(p)) {
