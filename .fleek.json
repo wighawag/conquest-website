@@ -1,7 +1,6 @@
 {
   "build": {
-    "image": "wighawag/pnpm:latest",
-    "command": "pnpm i --store=node_modules/.pnpm && pnpm run staging:web:build",
-    "publicDir": "web/build"
+    "command": "yarn && yarn build",
+    "publicDir": "docs"
   }
 }

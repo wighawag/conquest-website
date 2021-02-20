@@ -68,7 +68,7 @@
     "test": "web-test-runner \"src/**/*.test.ts\"",
     "serve": "ipfs-emulator --only -d docs -p 8080",
     "build:serve": "run-s build serve",
-    "deploy": "dotenv -- ipfs-deploy -p pinata -s conquest-eth-snowpack docs",
+    "deploy": "dotenv -- ipfs-deploy -p pinata -s conquest-eth-website docs",
     "build:deploy": "run-s build deploy"
   }
 }
