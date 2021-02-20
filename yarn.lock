@@ -6169,10 +6169,10 @@ prelude-ls@^1.2.1:
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"
   integrity sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==
 
-prepare-for-web@^0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/prepare-for-web/-/prepare-for-web-0.1.2.tgz#d61b7fc1fc58aef05b0436723b82b773025b3136"
-  integrity sha512-mTFQAR4r6V5cgrec+sp0uTAIb34CXsrtXx2cN6kQ9rpXw+qyQGBpqc5xLgN85ozQ7pqB7NfXRrD3ZwG0Vm7gHg==
+prepare-for-web@^0.1.3:
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/prepare-for-web/-/prepare-for-web-0.1.3.tgz#f543b0ee08e3acd062d4e719e2824a782749cc02"
+  integrity sha512-U9eyoTdK8XGMWwOycd6kYAh3xAldDE2857elgrpps4E6IE8OtvGQYXtouTebMD+mWyQWdKFaDa07h72/D7FDJg==
   dependencies:
     favicons "^6.2.0"
     fs-extra "^9.0.1"
