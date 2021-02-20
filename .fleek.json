@@ -1,6 +1,6 @@
 {
   "build": {
-    "image": "node:10",
+    "image": "node:12",
     "command": "yarn && yarn build",
     "publicDir": "docs"
   }
