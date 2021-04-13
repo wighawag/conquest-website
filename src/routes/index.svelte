@@ -106,10 +106,10 @@
      An unstoppable and open-ended game of strategy and diplomacy running on <a class="text-green-400 underline" href="https://ethereum.org" target="_blank">ethereum</a>.
     </p>
     <p class="m-6 mt-12 text-green-400 text-xl">
-      Coming Soon...
+      Alpha Coming Very Soon...
      </p>
      <p class="m-6 mt-12 text-green-400 text-xl">
-      Subscribe to the waiting list and our <a href="https://etherplay.io" class="text-gray-100 underline">Etherplay</a>'s newsletter to receive your invite key for the upcoming alpha.
+      Subscribe to the waiting list below to receive your invite key for the upcoming alpha. (This will also add you to our <a href="https://etherplay.io" class="text-gray-100 underline">Etherplay</a>'s newsletter')
      </p>
      <div class="max-w-md mx-auto mt-5 space-y-3 md:mt-8 md:space-y-5">
       <form id="subscribeForm" action="https://etherplay-newsletter-subscription.rim.workers.dev/" method="POST" class="sm:max-w-xl sm:mx-auto lg:mx-0">

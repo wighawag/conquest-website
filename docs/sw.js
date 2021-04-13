@@ -1,7 +1,7 @@
 // /!\ Warning /!\
 // Variables auto updated by build:
 const URLS_TO_PRE_CACHE = ['', 'test1/test11/', 'test1/test11/page/', 'test2/', 'test2/page/', 'test3/page/', 'dist/global.css', 'dist/index.js', 'dist/routes/test1/test11/index.svelte.js', 'dist/routes/test1/test11/page.svelte.js', 'dist/routes/test2/index.svelte.js', 'dist/routes/test2/page.svelte.js', 'dist/routes/test3/page.svelte.js', 'chunk.SLQI5P74.js', 'dist/index.css',];
-const CACHE_NAME = 'cache-kkyivdon';
+const CACHE_NAME = 'cache-kng4am5s';
 const DEV = false;
 //////////////////////////////////////////////////////////////////////////////
 
