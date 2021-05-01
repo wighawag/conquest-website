@@ -14,7 +14,7 @@
     const formData: string[][] = new FormData(form) as unknown as string[][];
     const data = new URLSearchParams([...formData]);
     console.log({data: data.toString()});
-    data.append('conquest_list', 'true');
+    // data.append('conquest_list', 'true');
     try {
       const result = await fetch(form.action, {
         method: form.method,
@@ -106,10 +106,10 @@
      An unstoppable and open-ended game of strategy and diplomacy running on <a class="text-green-400 underline" href="https://ethereum.org" target="_blank">ethereum</a>.
     </p>
     <p class="m-6 mt-12 text-green-400 text-xl">
-      Alpha Coming Very Soon...
+      The alpha is live! See it on <a href="https://alpha.conquest.eth.link" class="underline">https://alpha.conquest.eth.link</a>
      </p>
      <p class="m-6 mt-12 text-green-400 text-xl">
-      Subscribe to the waiting list below to receive your invite key for the upcoming alpha. (This will also add you to our <a href="https://etherplay.io" class="text-gray-100 underline">Etherplay</a>'s newsletter')
+      Subscribe to our <a href="https://etherplay.io" class="text-gray-100 underline">Etherplay</a>'s newsletter' for future updates.
      </p>
      <div class="max-w-md mx-auto mt-5 space-y-3 md:mt-8 md:space-y-5">
       <form id="subscribeForm" action="https://etherplay-newsletter-subscription.rim.workers.dev/" method="POST" class="sm:max-w-xl sm:mx-auto lg:mx-0">
