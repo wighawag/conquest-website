@@ -1,4 +1,6 @@
-build
-public/pwa
-node_modules
-package.json
+.svelte/**
+static/**
+build/**
+node_modules/**
+.vscode/**
+.yalc/**

@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["C:\\dev\\wighawag\\conquest.github.io\\src\\lib\\routing\\index.ts"],
-  "sourcesContent": ["import Router from './router.svelte';\nimport CurrentPage from './currentpage.svelte';\n\nexport type ComponentModule = {default: unknown};\n\nexport {Router, CurrentPage};\n"],
-  "mappings": "AAAA;AACA;AAIA;",
-  "names": []
-}

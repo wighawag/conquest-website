@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["C:\\dev\\wighawag\\conquest.github.io\\src\\index.ts"],
-  "sourcesContent": ["import {hookup} from 'named-logs-console';\nimport './service-worker-handler';\nimport App from './App.svelte';\nhookup();\n\nconst app = new App({\n  target: document.body,\n});\n\nexport default app;\n\n// Hot Module Replacement (HMR) - Remove this snippet to remove HMR.\n// Learn more: https://www.snowpack.dev/concepts/hot-module-replacement\nif (import.meta.hot) {\n  import.meta.hot.accept();\n  import.meta.hot.dispose(() => {\n    app.$destroy();\n  });\n}\n"],
-  "mappings": "AAAA;AACA;AACA;AACA;AAEA,MAAM,MAAM,IAAI,IAAI;AAAA,EAClB,QAAQ,SAAS;AAAA;AAGnB,eAAe;AAIf,IAAI,YAAY;AACd,cAAY,IAAI;AAChB,cAAY,IAAI,QAAQ;AACtB,QAAI;AAAA;AAAA;",
-  "names": []
-}

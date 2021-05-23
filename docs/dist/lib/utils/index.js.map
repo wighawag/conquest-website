@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["C:\\dev\\wighawag\\conquest.github.io\\src\\lib\\utils\\index.ts"],
-  "sourcesContent": ["export function wait<T>(numSeconds: number, v: T): Promise<T> {\n  return new Promise(function (resolve) {\n    setTimeout(resolve.bind(null, v), numSeconds * 1000);\n  });\n}\n"],
-  "mappings": "AAAO,qBAAiB,YAAoB;AAC1C,SAAO,IAAI,QAAQ,SAAU;AAC3B,eAAW,QAAQ,KAAK,MAAM,IAAI,aAAa;AAAA;AAAA;",
-  "names": []
-}

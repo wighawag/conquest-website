@@ -1,6 +1,5 @@
 <script lang="ts">
-  import NavButton from '../components/navigation/NavButton.svelte';
-  import Feature from '../components/Feature.svelte';
+  import NavButton from '../lib/components/navigation/NavButton.svelte';
   const name = 'conquest.eth';
 
   type Outcome = {
@@ -120,7 +119,7 @@
           </div>
           <div class="mt-3 sm:mt-0 sm:ml-3">
             <NavButton
-            on:click={(e) => subscribeToNewsletter()}
+            on:click={() => subscribeToNewsletter()}
               customPadding='py-3 px-4'
               class="big block w-full rounded-md shadow font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 focus:ring-offset-gray-900"
               label="Subscribe to Etherplay newsletter">

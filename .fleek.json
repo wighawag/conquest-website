@@ -1,7 +1,7 @@
 {
   "build": {
-    "image": "node:12",
-    "command": "yarn && yarn build",
+    "image": "node:14",
+    "command": "npm install -g pnpm@^6.0.0 && pnpm i && pnpm build",
     "publicDir": "docs"
   }
 }

@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["C:\\dev\\wighawag\\conquest.github.io\\src\\lib\\graphql\\index.ts"],
-  "sourcesContent": ["export * from './mutate';\nexport * from './query';\nexport * from './queryStore';\n"],
-  "mappings": "AAAA;AACA;AACA;",
-  "names": []
-}
