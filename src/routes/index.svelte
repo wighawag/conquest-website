@@ -109,7 +109,7 @@
      An unstoppable and open-ended game of strategy and diplomacy running on <a class="text-green-400 underline" href="https://ethereum.org" target="_blank">ethereum</a>.
     </p>
     <p class="m-6 mt-12 text-gray-200 text-xl">
-      The first alpha is over and it was a blast! We are now working on the next version with all the great feedback we got from running it.
+      The first alpha is over and it was a blast! We are now working on the next version with all the great feedback we got from our players!
      </p>
 
      <p class="m-6 mt-12 text-gray-200 text-xl">
