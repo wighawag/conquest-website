@@ -1,5 +1,6 @@
 <script lang="ts">
-  import NavButton from '../lib/components/navigation/NavButton.svelte';
+  import { url } from '$lib/utils/url';
+  import NavButton from '$lib/components/navigation/NavButton.svelte';
   const name = 'conquest.eth';
 
   type Outcome = {
@@ -50,8 +51,11 @@
 
 <div class="mx-auto max-w-7xl mt-2 border-b pb-2 border-gray-700 text-center sm:text-left">
   <a href="https://etherplay.io" class="mx-2"><img alt="Etherplay" src="logo_presents_on_black.png" class="inline h-10" /></a>
+  <a class="float-right text-white underline text-lg" href={`${url('devlog/')}`}>dev log</a>
 </div>
 <!-- <div class="mt-2 w-full h-1 bg-gray-700 max-w-7xl mx-auto"></div> -->
+
+<!-- <div class="absolute top-0 right-0"> -->
 
 <div class="fixed inset-0 flex items-end justify-center px-4 py-6 pointer-events-none sm:p-6 sm:items-start sm:justify-end z-50">
   {#if outcome}
@@ -104,9 +108,14 @@
     <p class="m-6 text-gray-100 text-xl">
      An unstoppable and open-ended game of strategy and diplomacy running on <a class="text-green-400 underline" href="https://ethereum.org" target="_blank">ethereum</a>.
     </p>
-    <p class="m-6 mt-12 text-green-400 text-xl">
-      The alpha is live! See it on <a href="https://alpha.conquest.eth.link" class="underline">https://alpha.conquest.eth.link</a>
+    <p class="m-6 mt-12 text-gray-200 text-xl">
+      The first alpha is over and it was a blast! We are now working on the next version with all the great feedback we got from running it.
      </p>
+
+     <p class="m-6 mt-12 text-gray-200 text-xl">
+      We setup a <a href={url('devlog/')} class="underline text-green-400">devlog</a> to record our progress and thoughts.
+     </p>
+
      <p class="m-6 mt-12 text-green-400 text-xl">
       Subscribe to our <a href="https://etherplay.io" class="text-gray-100 underline">Etherplay</a>'s newsletter' for future updates.
      </p>

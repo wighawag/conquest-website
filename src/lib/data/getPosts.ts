@@ -1,7 +1,7 @@
-export type Post = {metadata: string; filename: string; slug: string; date: string; title: string};
+export type Post = {metadata: string; filename: string; slug: string; date: string; title: string; image: string};
 export default async (): Promise<Post[]> => {
   const posts: Post[] = await Promise.all(
-    Object.entries(import.meta.glob('/src/routes/blog/*.md')).map(async ([path, page]) => {
+    Object.entries(import.meta.glob('/src/routes/devlog/*.md')).map(async ([path, page]) => {
       const {metadata} = await page();
       const pathComponents = path.split('/');
       const filename = pathComponents.pop();
