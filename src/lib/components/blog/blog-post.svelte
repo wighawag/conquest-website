@@ -5,7 +5,7 @@
 	import './prism-theme.css';
   import { page } from '$app/stores';
   import {url as appUrl} from '../../../../application.json'
-  const host = appUrl.endsWith("/") ? appUrl : appUrl + "/";
+  const host = appUrl.endsWith("/") ? appUrl.slice(0, appUrl.length -1) : appUrl;
 
 	export let title;
 	export let date;
@@ -27,14 +27,14 @@
   <meta property="og:title" content={title}>
   <meta property="og:description" content={title}>
   {#if image}
-  <meta property="og:image" content="{host}{image}">
+  <meta property="og:image" content="{host}/{image}">
   {/if}
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="{host}{$page.path}">
   <meta property="twitter:title" content={title}>
   <meta property="twitter:description" content={title}>
   {#if image}
-  <meta property="twitter:image" content="{host}{image}">
+  <meta property="twitter:image" content="{host}/{image}">
   {/if}
 </svelte:head>
 
