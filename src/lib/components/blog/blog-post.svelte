@@ -3,6 +3,8 @@
   import { base } from '$app/paths';
   import { url } from '$lib/utils/url';
 	import './prism-theme.css';
+  import {url as appUrl} from '../../../application.json'
+  const host = appUrl.endsWith("/") ? appUrl : appUrl + "/";
 
 	export let title;
 	export let date;
@@ -22,12 +24,12 @@
   <meta property="og:title" content={title}>
   <meta property="og:description" content={title}>
   {#if image}
-  <meta property="og:image" content="https://conquest.eth.link/{image}">
+  <meta property="og:image" content="{host}{image}">
   {/if}
   <meta property="twitter:title" content={title}>
   <meta property="twitter:description" content={title}>
   {#if image}
-  <meta property="twitter:image" content="https://conquest.eth.link/{image}">
+  <meta property="twitter:image" content="{host}{image}">
   {/if}
 </svelte:head>
 
