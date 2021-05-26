@@ -3,7 +3,7 @@
   import { base } from '$app/paths';
   import { url } from '$lib/utils/url';
 	import './prism-theme.css';
-  import {url as appUrl} from '../../../application.json'
+  import {url as appUrl} from '../../../../application.json'
   const host = appUrl.endsWith("/") ? appUrl : appUrl + "/";
 
 	export let title;
