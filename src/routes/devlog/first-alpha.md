@@ -14,9 +14,9 @@ After 3 weeks of intense war between the players, the alpha is now over and we c
 
 ## What did we learn ?
 
-The alpha was great to test our assumptions and we are glad to say that the core of the game is working as intended. Conquest has a core social element that make it unique among the current decentralised blockchain game. While the UX was pretty bare bone and lacked various utility, players could self organise and proved our main assumptions.
+The alpha was great to test our assumptions and we are glad to say that the core of the game is working as intended. Conquest has a core social element that make it unique among the current decentralised blockchain games. While the UX was pretty bare bone and lacked various utility, players could self organise and it proved our main assumptions.
 
-As mentioned, the alpha was lacking terribly in term of UX. on top of that the goerli network which was losing many tx revealed the lack of robustness on the frontend. Our code had several `//TODO` related to tx handling that we assumed we did not need for our 3 weeks long alpha. We were unfortunately wrong and this caused lots of frustration to our players. We also discovered other issues related to the agent system (that should normally allow player to sleep well while their fleet travel across space).
+As mentioned, the alpha was lacking terribly in term of UX. on top of that the goerli network which was losing many tx revealed the lack of robustness on the frontend. Our code was not intended to be full proof as we assumed we did not need that for our 3 weeks long alpha. We were unfortunately wrong and this caused lots of frustration to our players. We also discovered other issues related to the agent system (that should normally allow player to sleep well while their fleet travel across space).
 
 On top of that one of our goal with the alpha was to test how far we could go with decentralisation. The core loop was relying on **zero backend**. Everything was fetched from the player's wallet node. This worked but limited the potential of the user experience. We had to add 2 new pages not possible using ethereum's node api alone: the highscore and logs page. These 2 pages were crucial for the experience of the game. We used [thegraph.com](https://thegraph.com) backend for this and a lot more will be added in future version to offer a much nicer experience. With such backend, decentralisation would still be preserved by letting users run their own subgraph node.
 
@@ -26,7 +26,7 @@ The current focus is the next alpha. We do not have timeline for it yet, but the
 
 We will also improve the UX and offer a more visible experience when possible. As mentioned above, the plan is to make more use of subgraph to fetch data more efficiently.
 
-In term of gameplay, while the game is very simple, we are happy with the current design. Having said that, we will be looking at adding extra social feature to the core game like public alliances. We might also investigate the addition of extra features.
+In term of gameplay, while the game is very simple, we are happy with the current design. Having said that, we will be looking at adding extra social feature to the core game like public alliances. We might also investigate the addition of extra features. But this will come later,
 
 We will keep you posted!
 
