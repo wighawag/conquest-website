@@ -3,6 +3,7 @@
   import { base } from '$app/paths';
   import { url } from '$lib/utils/url';
 	import './prism-theme.css';
+  import { page } from '$app/stores';
   import {url as appUrl} from '../../../../application.json'
   const host = appUrl.endsWith("/") ? appUrl : appUrl + "/";
 
@@ -21,11 +22,15 @@
 	<title>{title}</title>
   <meta name="title" content={title}>
   <meta name="description" content={title}>
+  <meta property="og:url" content="{host}{$page.path}">
+  <meta property="og:type" content="website">
   <meta property="og:title" content={title}>
   <meta property="og:description" content={title}>
   {#if image}
   <meta property="og:image" content="{host}{image}">
   {/if}
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="{host}{$page.path}">
   <meta property="twitter:title" content={title}>
   <meta property="twitter:description" content={title}>
   {#if image}
