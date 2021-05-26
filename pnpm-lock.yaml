@@ -18,7 +18,7 @@ specifiers:
   npm-run-all: ^4.1.5
   postcss: ^8.2.15
   postcss-load-config: ^3.0.1
-  prepare-for-web: ^0.1.5
+  prepare-for-web: ^0.1.6
   prettier: ~2.3.0
   prettier-plugin-svelte: ^2.3.0
   prism-svelte: ^0.4.7
@@ -57,7 +57,7 @@ devDependencies:
   npm-run-all: 4.1.5
   postcss: 8.3.0
   postcss-load-config: 3.0.1
-  prepare-for-web: 0.1.5
+  prepare-for-web: 0.1.6
   prettier: 2.3.0
   prettier-plugin-svelte: 2.3.0_prettier@2.3.0+svelte@3.38.2
   prism-svelte: 0.4.7
@@ -561,17 +561,17 @@ packages:
     peerDependencies:
       svelte: ^3.38.2
     dependencies:
-      '@sveltejs/vite-plugin-svelte': 1.0.0-next.10_svelte@3.38.2+vite@2.3.3
+      '@sveltejs/vite-plugin-svelte': 1.0.0-next.10_svelte@3.38.2+vite@2.3.4
       cheap-watch: 1.0.3
       sade: 1.7.4
       svelte: 3.38.2
-      vite: 2.3.3
+      vite: 2.3.4
     transitivePeerDependencies:
       - rollup
       - supports-color
     dev: true
 
-  /@sveltejs/vite-plugin-svelte/1.0.0-next.10_svelte@3.38.2+vite@2.3.3:
+  /@sveltejs/vite-plugin-svelte/1.0.0-next.10_svelte@3.38.2+vite@2.3.4:
     resolution: {integrity: sha512-ImvxbhPePm2hWNTKBSA3LHAYGwiEjHjvvgfPLXm4R87sfZ+BMXql9jBmDpzUC/URBLT4BB3Jxos/i523qkJBHg==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -587,7 +587,7 @@ packages:
       source-map: 0.7.3
       svelte: 3.38.2
       svelte-hmr: 0.14.4_svelte@3.38.2
-      vite: 2.3.3
+      vite: 2.3.4
     transitivePeerDependencies:
       - rollup
       - supports-color
@@ -2545,7 +2545,7 @@ packages:
       jsontoxml: 1.0.1
       lodash.defaultsdeep: 4.6.1
       require-directory: 2.1.1
-      sharp: 0.28.2
+      sharp: 0.28.3
       through2: 4.0.2
       tinycolor2: 1.4.2
       to-ico: 1.1.5
@@ -2925,7 +2925,7 @@ packages:
       source-map: 0.6.1
       wordwrap: 1.0.0
     optionalDependencies:
-      uglify-js: 3.13.7
+      uglify-js: 3.13.8
     dev: true
 
   /har-schema/2.0.0:
@@ -4823,8 +4823,8 @@ packages:
     resolution: {integrity: sha512-1nh45deeb5olNY7eX82BkPO7SSxR5SSYJiPTrTdFUVYwAl8CKMA5N9PjTYkHiRjisVcxcQ1HXdLhx2qxxJzLNQ==}
     dev: true
 
-  /node-abi/2.26.0:
-    resolution: {integrity: sha512-ag/Vos/mXXpWLLAYWsAoQdgS+gW7IwvgMLOgqopm/DbzAjazLltzgzpVMsFlgmo9TzG5hGXeaBZx2AI731RIsQ==}
+  /node-abi/2.30.0:
+    resolution: {integrity: sha512-g6bZh3YCKQRdwuO/tSZZYJAw622SjsRfJ2X0Iy4sSOHZ34/sPPdVBn8fev2tj7njzLwuqPw9uMtGsGkO5kIQvg==}
     dependencies:
       semver: 5.7.1
     dev: true
@@ -5664,7 +5664,7 @@ packages:
       minimist: 1.2.5
       mkdirp-classic: 0.5.3
       napi-build-utils: 1.0.2
-      node-abi: 2.26.0
+      node-abi: 2.30.0
       noop-logger: 0.1.1
       npmlog: 4.1.2
       pump: 3.0.0
@@ -5679,8 +5679,8 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prepare-for-web/0.1.5:
-    resolution: {integrity: sha512-6M7VSalJcj1P/9Iqdva30EHZLrYjdGxljJz9kcqt/NaCi/eRx4Q5I8zD08VarscKRVqKj8ftQj5/8/iXtcC0nQ==}
+  /prepare-for-web/0.1.6:
+    resolution: {integrity: sha512-9BHv8hSTyd/An66X8O5UXZ9ID0f/I+dVTjXs+9Vl3MOTCmP0OglkSgFRJ1y0HvhuIXa6otLfjZMet/auaOEpyA==}
     hasBin: true
     dependencies:
       favicons: 6.2.2
@@ -6192,6 +6192,14 @@ packages:
       fsevents: 2.3.2
     dev: true
 
+  /rollup/2.50.1:
+    resolution: {integrity: sha512-3MQhSdGpms4xjYrtR3WNHMT+VrWWM4oqUxUC770MmLo1FWFR2pr/OL81HSPC/ifmiu0uMFk0qPGLmjkSMRIESw==}
+    engines: {node: '>=10.0.0'}
+    hasBin: true
+    optionalDependencies:
+      fsevents: 2.3.2
+    dev: true
+
   /run-parallel/1.2.0:
     resolution: {integrity: sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==}
     dependencies:
@@ -6280,8 +6288,8 @@ packages:
     resolution: {integrity: sha512-E5LDX7Wrp85Kil5bhZv46j8jOeboKq5JMmYM3gVGdGH8xFpPWXUMsNrlODCrkoxMEeNi/XZIwuRvY4XNwYMJpw==}
     dev: true
 
-  /sharp/0.28.2:
-    resolution: {integrity: sha512-CdmySbsQVe/+ZM2j9zzvUfWumM0L0iHj1kpxJMFuyWvSuBULebvGCdOLb1f5vbbBrIGroX714Fx1wiWaKniz4A==}
+  /sharp/0.28.3:
+    resolution: {integrity: sha512-21GEP45Rmr7q2qcmdnjDkNP04Ooh5v0laGS5FDpojOO84D1DJwUijLiSq8XNNM6e8aGXYtoYRh3sVNdm8NodMA==}
     engines: {node: '>=10'}
     requiresBuild: true
     dependencies:
@@ -7066,8 +7074,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /uglify-js/3.13.7:
-    resolution: {integrity: sha512-1Psi2MmnZJbnEsgJJIlfnd7tFlJfitusmR7zDI8lXlFI0ACD4/Rm/xdrU8bh6zF0i74aiVoBtkRiFulkrmh3AA==}
+  /uglify-js/3.13.8:
+    resolution: {integrity: sha512-PvFLMFIQHfIjFFlvAch69U2IvIxK9TNzNWt1SxZGp9JZ/v70yvqIQuiJeVPPtUMOzoNt+aNRDk4wgxb34wvEqA==}
     engines: {node: '>=0.8.0'}
     hasBin: true
     dev: true
@@ -7268,6 +7276,19 @@ packages:
       postcss: 8.3.0
       resolve: 1.20.0
       rollup: 2.49.0
+    optionalDependencies:
+      fsevents: 2.3.2
+    dev: true
+
+  /vite/2.3.4:
+    resolution: {integrity: sha512-7orxrF65+Q5n/sMCnO91S8OS0gkPJ7g+y3bLlc7CPCXVswK8to1T8YycCk9SZh+AcIc0TuN6YajWTBFS5atMNA==}
+    engines: {node: '>=12.0.0'}
+    hasBin: true
+    dependencies:
+      esbuild: 0.11.23
+      postcss: 8.3.0
+      resolve: 1.20.0
+      rollup: 2.50.1
     optionalDependencies:
       fsevents: 2.3.2
     dev: true

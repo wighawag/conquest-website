@@ -60,6 +60,18 @@
 
 <svelte:head>
 	<title>{title}</title>
+  <meta name="title" content={title}>
+  <meta name="description" content={title}>
+  <meta property="og:title" content={title}>
+  <meta property="og:description" content={title}>
+  {#if image}
+  <meta property="og:image" content="https://conquest.eth.link/{image}">
+  {/if}
+  <meta property="twitter:title" content={title}>
+  <meta property="twitter:description" content={title}>
+  {#if image}
+  <meta property="twitter:image" content="https://conquest.eth.link/{image}">
+  {/if}
 </svelte:head>
 
 <span class="text-white" ><a href={url('')} class="underline text-white m-2">Home</a> >
