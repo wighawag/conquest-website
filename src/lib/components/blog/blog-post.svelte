@@ -6,6 +6,7 @@
   import { page } from '$app/stores';
   import {url as appUrl} from '../../../../application.json'
   const host = appUrl.endsWith("/") ? appUrl.slice(0, appUrl.length -1) : appUrl;
+  const pagePath = $page.path.endsWith("/") ? $page.path : $page.path + "/";
 
 	export let title;
 	export let date;
@@ -22,7 +23,7 @@
 	<title>{title}</title>
   <meta name="title" content={title}>
   <meta name="description" content={title}>
-  <meta property="og:url" content="{host}{$page.path}">
+  <meta property="og:url" content="{host}{pagePath}">
   <meta property="og:type" content="website">
   <meta property="og:title" content={title}>
   <meta property="og:description" content={title}>
@@ -30,7 +31,7 @@
   <meta property="og:image" content="{host}/{image}">
   {/if}
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="{host}{$page.path}">
+  <meta property="twitter:url" content="{host}{pagePath}">
   <meta property="twitter:title" content={title}>
   <meta property="twitter:description" content={title}>
   {#if image}

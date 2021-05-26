@@ -27,7 +27,8 @@
   const title = appName + " - devlog";
   const description = "Get latest news on the development of conquest.eth";
   const host = appUrl.endsWith("/") ? appUrl.slice(0, appUrl.length -1) : appUrl;
-  const previewImage = host + "preview.png";
+  const pagePath = $page.path.endsWith("/") ? $page.path : $page.path + "/";
+  const previewImage = host + "/preview.png";
 
 </script>
 
@@ -36,12 +37,12 @@
   <meta name="title" content={title}>
   <meta name="description" content={description}>
   <meta property="og:type" content="website">
-  <meta property="og:url" content="{host}{$page.path}">
+  <meta property="og:url" content="{host}{pagePath}">
   <meta property="og:title" content={title}>
   <meta property="og:description" content={description}>
   <meta property="og:image" content={previewImage}>
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="{host}{$page.path}">
+  <meta property="twitter:url" content="{host}{pagePath}">
   <meta property="twitter:title" content={title}>
   <meta property="twitter:description" content={description}>
   <meta property="twitter:image" content={previewImage}>

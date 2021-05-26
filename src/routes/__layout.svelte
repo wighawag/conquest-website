@@ -11,7 +11,7 @@
   const title = appName + " - " + appDescription;
   const description = appDescription;
   const host = appUrl.endsWith("/") ? appUrl.slice(0, appUrl.length -1) : appUrl;
-  const previewImage = host + "preview.png";
+  const previewImage = host + "/preview.png";
 </script>
 
 <svelte:head>
