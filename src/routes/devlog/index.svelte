@@ -46,7 +46,7 @@
 </svelte:head>
 
 
-<span class="text-white"><a href={url('')} class="underline text-white m-2">Home</a> > <span class="text-gray-400">devlog</span></span>
+<div class="text-white m-3"><a href={url('')} class="underline text-white m-2">Home</a> > <span class="text-gray-400">devlog</span></div>
 
 <div class="text-gray-100 bg-gray-900 max-w-2xl mx-auto p-4 sm:p-8">
 	<div>

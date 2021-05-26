@@ -51,7 +51,7 @@
 
 <div class="mx-auto max-w-7xl mt-2 border-b pb-2 border-gray-700 text-center sm:text-left">
   <a href="https://etherplay.io" class="mx-2"><img alt="Etherplay" src="logo_presents_on_black.png" class="inline h-10" /></a>
-  <a class="float-right text-white underline text-lg" href={`${url('devlog/')}`}>dev log</a>
+  <a class="float-right text-white underline text-lg mr-5" href={`${url('devlog/')}`}>devlog</a>
 </div>
 <!-- <div class="mt-2 w-full h-1 bg-gray-700 max-w-7xl mx-auto"></div> -->
 
