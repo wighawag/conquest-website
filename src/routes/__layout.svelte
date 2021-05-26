@@ -10,7 +10,8 @@
 
   const title = appName + " - " + appDescription;
   const description = appDescription;
-  const host = appUrl.endsWith("/") ? appUrl.slice(0, appUrl.length -1) : appUrl;
+  const urlToUse = import.meta.env.VITE_APPLICATION_URL as string || appUrl;
+  const host = urlToUse.endsWith("/") ? urlToUse.slice(0, urlToUse.length -1) : urlToUse;
   const previewImage = host + "/preview.png";
 </script>
 

@@ -26,7 +26,8 @@
 
   const title = appName + " - devlog";
   const description = "Get latest news on the development of conquest.eth";
-  const host = appUrl.endsWith("/") ? appUrl.slice(0, appUrl.length -1) : appUrl;
+  const urlToUse = import.meta.env.VITE_APPLICATION_URL as string || appUrl;
+  const host = urlToUse.endsWith("/") ? urlToUse.slice(0, urlToUse.length -1) : urlToUse;
   const pagePath = $page.path.endsWith("/") ? $page.path : $page.path + "/";
   const previewImage = host + "/preview.png";
 
