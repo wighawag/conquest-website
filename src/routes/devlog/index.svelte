@@ -56,7 +56,7 @@
 	<div>
 		{#each posts as post}
 			<a
-				href={`${base}/devlog/${post.slug}`}
+				href={`${base}/devlog/${post.slug}/`}
 				class="post block mb-4 pb-4 border-b border-gray-100 last:border-none last:mb-0"
 			>
         <!-- {#if post.image}<img class="w-8 h-8" src={`${base}/${post.image}`} alt={post.title}/>{/if} -->
