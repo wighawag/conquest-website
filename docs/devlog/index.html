@@ -86,26 +86,27 @@
   <script>
       "use strict";var noop=function(){},W="undefined"!=typeof window?window:globalThis,oldConsole=W.console,disabledRegexps=[],enabledRegexps=[];function bindCall(e,l,s,a){return l.enabled&&(l.level>=a||logs.level>=a)?s<=a||logs.traceLevel<=a?oldConsole.trace.bind(oldConsole):e.bind(oldConsole):noop}var loggers={},logs=function(e){var l=loggers[e];if(l)return l;var s=logs.level,a=logs.traceLevel;return l=loggers[e]={get assert(){return bindCall(oldConsole.assert,l,a,1)},get error(){return bindCall(oldConsole.error,l,a,1)},get warn(){return bindCall(oldConsole.warn,l,a,2)},get info(){return bindCall(oldConsole.info,l,a,3)},get log(){return bindCall(oldConsole.log,l,a,4)},get debug(){return bindCall(oldConsole.debug,l,a,5)},get trace(){return bindCall(oldConsole.trace,l,a,6)},get dir(){return bindCall(oldConsole.dir,l,a,5)},get table(){return bindCall(oldConsole.table||oldConsole.debug,l,a,5)},get level(){return s},set level(e){s=e},get traceLevel(){return a},set traceLevel(e){a=e},enabled:enabled(e,{disabledRegexps:disabledRegexps,enabledRegexps:enabledRegexps})}},logLevels={error:1,warn:2,info:3,log:4,debug:5,trace:6};function enabled(e,l){var s,a,r=l.disabledRegexps,o=l.enabledRegexps;if("*"===e[e.length-1])return!0;for(s=0,a=r.length;s<a;s++)if(r[s].test(e))return!1;for(s=0,a=o.length;s<a;s++)if(o[s].test(e))return!0;return!1}function processNamespaces(e,l,s){for(var a=l.disabledRegexps,r=l.enabledRegexps,o=("string"==typeof e?e:"").split(/[\s,]+/),n=o.length,t=0;t<n;t++)o[t]&&("-"===(e=o[t].replace(/\*/g,".*?"))[0]?a.push(new RegExp("^"+e.substr(1)+"$")):r.push(new RegExp("^"+e+"$")));for(var g=0,d=Object.keys(loggers);g<d.length;g++){var i=d[g];s(i,enabled(i,{disabledRegexps:a,enabledRegexps:r}))}}logs.level=2,logs.traceLevel=6,logs.setTraceLevelFor=function(e,l){processNamespaces(e||"*",{disabledRegexps:[],enabledRegexps:[]},(function(e,s){s&&(loggers[e].traceLevel=l)}))},logs.disable=function(){disabledRegexps.splice(0,disabledRegexps.length),enabledRegexps.splice(0,enabledRegexps.length);for(var e=0,l=Object.keys(loggers);e<l.length;e++){var s=l[e];loggers[s].enabled=!1}try{localStorage.removeItem("debug")}catch(e){}},logs.enable=function(e){disabledRegexps.splice(0,disabledRegexps.length),enabledRegexps.splice(0,enabledRegexps.length),processNamespaces(e=""===e?"*":e||"*",{disabledRegexps:disabledRegexps,enabledRegexps:enabledRegexps},(function(e,l){return loggers[e].enabled=l}));try{localStorage.setItem("debug",e)}catch(e){}};try{var str=localStorage.getItem("debug");str&&""!==str&&logs.enable(str)}catch(e){}for(var vars=W.location?W.location.search.slice(1).split("&"):[],_i=0,vars_1=vars;_i<vars_1.length;_i++){var variable=vars_1[_i];if(variable.startsWith("debug="))""===(val=variable.slice(6))?logs.disable():logs.enable(val);else if(variable.startsWith("log=")){var val=variable.slice(4);logs.level=logLevels[val]||parseInt(val)||logs.level}else if(variable.startsWith("trace=")){val=variable.slice(6);logs.traceLevel=logLevels[val]||parseInt(val)||logs.level}}window._logFactory=logs;
     </script>
-    <title>conquest.eth - devlog</title><meta name="title" content="conquest.eth - devlog" data-svelte="svelte-1d69iht"><meta name="description" content="Get latest news on the development of conquest.eth" data-svelte="svelte-1d69iht"><meta property="og:type" content="website" data-svelte="svelte-1d69iht"><meta property="og:url" content="https://conquest.eth.link/" data-svelte="svelte-1d69iht"><meta property="og:title" content="conquest.eth - devlog" data-svelte="svelte-1d69iht"><meta property="og:description" content="Get latest news on the development of conquest.eth" data-svelte="svelte-1d69iht"><meta property="og:image" content="https://conquest.eth.link/preview.png" data-svelte="svelte-1d69iht"><meta property="twitter:card" content="summary_large_image" data-svelte="svelte-1d69iht"><meta property="twitter:url" content="https://conquest.eth.link/" data-svelte="svelte-1d69iht"><meta property="twitter:title" content="conquest.eth - devlog" data-svelte="svelte-1d69iht"><meta property="twitter:description" content="Get latest news on the development of conquest.eth" data-svelte="svelte-1d69iht"><meta property="twitter:image" content="https://conquest.eth.link/preview.png" data-svelte="svelte-1d69iht">
+    <title>conquest.eth - devlog</title><meta name="title" content="conquest.eth - devlog" data-svelte="svelte-1hb3pe9"><meta name="description" content="Get latest news on the development of conquest.eth" data-svelte="svelte-1hb3pe9"><meta property="og:type" content="website" data-svelte="svelte-1hb3pe9"><meta property="og:url" content="https://conquest.eth.link/devlog/" data-svelte="svelte-1hb3pe9"><meta property="og:title" content="conquest.eth - devlog" data-svelte="svelte-1hb3pe9"><meta property="og:description" content="Get latest news on the development of conquest.eth" data-svelte="svelte-1hb3pe9"><meta property="og:image" content="https://conquest.eth.link/preview.png" data-svelte="svelte-1hb3pe9"><meta property="twitter:card" content="summary_large_image" data-svelte="svelte-1hb3pe9"><meta property="twitter:url" content="https://conquest.eth.link/devlog/" data-svelte="svelte-1hb3pe9"><meta property="twitter:title" content="conquest.eth - devlog" data-svelte="svelte-1hb3pe9"><meta property="twitter:description" content="Get latest news on the development of conquest.eth" data-svelte="svelte-1hb3pe9"><meta property="twitter:image" content="https://conquest.eth.link/preview.png" data-svelte="svelte-1hb3pe9">
 
 		
 
-		<link rel="modulepreload" href=".././_app/start-70a4978b.js">
-		<link rel="modulepreload" href=".././_app/chunks/vendor-0274e95f.js">
+		<link rel="modulepreload" href=".././_app/start-f399d580.js">
+		<link rel="modulepreload" href=".././_app/chunks/vendor-8fe52820.js">
 		<link rel="modulepreload" href=".././_app/chunks/paths-45dac81d.js">
-		<link rel="modulepreload" href=".././_app/pages/devlog/__layout.reset.svelte-93f778d0.js">
-		<link rel="modulepreload" href=".././_app/pages/devlog/index.svelte-3245d4f3.js">
+		<link rel="modulepreload" href=".././_app/pages/devlog/__layout.reset.svelte-6e1bc5b6.js">
+		<link rel="modulepreload" href=".././_app/pages/devlog/index.svelte-33ea82e1.js">
 		<link rel="modulepreload" href=".././_app/chunks/url-92f7f1d2.js">
 		<link rel="modulepreload" href=".././_app/chunks/application-e914de77.js">
+		<link rel="modulepreload" href=".././_app/chunks/stores-95dde8a7.js">
 		<link rel="stylesheet" href=".././_app/assets/start-a97448ed.css">
-		<link rel="stylesheet" href=".././_app/assets/global-b865108a.css">
+		<link rel="stylesheet" href=".././_app/assets/global-24ce9ba7.css">
 
 		<script type="module">
-			import { start } from ".././_app/start-70a4978b.js";
+			import { start } from ".././_app/start-f399d580.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base": window.BASE,"assets":"/."},
-				session: {posts:[{title:"The first alpha was a blast!",date:"2021-05-25T00:00:00.000Z",image:"images\u002Fdevlog\u002Fscreenshot_alpha_1.png",filename:"first-alpha.md",slug:"first-alpha"}]},
+				session: {posts:[{title:"June 2021's update",date:"2021-06-18T00:00:00.000Z",image:"images\u002Fconquest-alpha.png",filename:"june-2021-update.md",slug:"june-2021-update"},{title:"The first alpha was a blast!",date:"2021-05-25T00:00:00.000Z",image:"images\u002Fdevlog\u002Fscreenshot_alpha_1.png",filename:"first-alpha.md",slug:"first-alpha"}]},
 				host: location.host,
 				route: true,
 				spa: false,
@@ -114,8 +115,8 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import(".././_app/pages/devlog/__layout.reset.svelte-93f778d0.js"),
-						import(".././_app/pages/devlog/index.svelte-3245d4f3.js")
+						import(".././_app/pages/devlog/__layout.reset.svelte-6e1bc5b6.js"),
+						import(".././_app/pages/devlog/index.svelte-33ea82e1.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -134,9 +135,12 @@
 
 
 
-<span class="text-white"><a href="../" class="underline text-white m-2">Home</a> &gt; <span class="text-gray-400">devlog</span></span>
+<div class="text-white m-3"><a href="../" class="underline text-white m-2">Home</a> &gt; <span class="text-gray-400">devlog</span></div>
 
-<div class="text-gray-100 bg-gray-900 max-w-2xl mx-auto p-4 sm:p-8"><div><a href="../devlog/first-alpha" class="post block mb-4 pb-4 border-b border-gray-100 last:border-none last:mb-0">
+<div class="text-gray-100 bg-gray-900 max-w-2xl mx-auto p-4 sm:p-8"><div><a href="../devlog/june-2021-update" class="post block mb-4 pb-4 border-b border-gray-100 last:border-none last:mb-0">
+		<div class="title font-medium text-xl">June 2021&#39;s update</div>
+		<div class="date text-gray-400 font-light">18/06/2021</div>
+	</a><a href="../devlog/first-alpha" class="post block mb-4 pb-4 border-b border-gray-100 last:border-none last:mb-0">
 		<div class="title font-medium text-xl">The first alpha was a blast!</div>
 		<div class="date text-gray-400 font-light">25/05/2021</div>
 	</a></div></div>

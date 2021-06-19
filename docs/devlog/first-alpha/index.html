@@ -86,26 +86,29 @@
   <script>
       "use strict";var noop=function(){},W="undefined"!=typeof window?window:globalThis,oldConsole=W.console,disabledRegexps=[],enabledRegexps=[];function bindCall(e,l,s,a){return l.enabled&&(l.level>=a||logs.level>=a)?s<=a||logs.traceLevel<=a?oldConsole.trace.bind(oldConsole):e.bind(oldConsole):noop}var loggers={},logs=function(e){var l=loggers[e];if(l)return l;var s=logs.level,a=logs.traceLevel;return l=loggers[e]={get assert(){return bindCall(oldConsole.assert,l,a,1)},get error(){return bindCall(oldConsole.error,l,a,1)},get warn(){return bindCall(oldConsole.warn,l,a,2)},get info(){return bindCall(oldConsole.info,l,a,3)},get log(){return bindCall(oldConsole.log,l,a,4)},get debug(){return bindCall(oldConsole.debug,l,a,5)},get trace(){return bindCall(oldConsole.trace,l,a,6)},get dir(){return bindCall(oldConsole.dir,l,a,5)},get table(){return bindCall(oldConsole.table||oldConsole.debug,l,a,5)},get level(){return s},set level(e){s=e},get traceLevel(){return a},set traceLevel(e){a=e},enabled:enabled(e,{disabledRegexps:disabledRegexps,enabledRegexps:enabledRegexps})}},logLevels={error:1,warn:2,info:3,log:4,debug:5,trace:6};function enabled(e,l){var s,a,r=l.disabledRegexps,o=l.enabledRegexps;if("*"===e[e.length-1])return!0;for(s=0,a=r.length;s<a;s++)if(r[s].test(e))return!1;for(s=0,a=o.length;s<a;s++)if(o[s].test(e))return!0;return!1}function processNamespaces(e,l,s){for(var a=l.disabledRegexps,r=l.enabledRegexps,o=("string"==typeof e?e:"").split(/[\s,]+/),n=o.length,t=0;t<n;t++)o[t]&&("-"===(e=o[t].replace(/\*/g,".*?"))[0]?a.push(new RegExp("^"+e.substr(1)+"$")):r.push(new RegExp("^"+e+"$")));for(var g=0,d=Object.keys(loggers);g<d.length;g++){var i=d[g];s(i,enabled(i,{disabledRegexps:a,enabledRegexps:r}))}}logs.level=2,logs.traceLevel=6,logs.setTraceLevelFor=function(e,l){processNamespaces(e||"*",{disabledRegexps:[],enabledRegexps:[]},(function(e,s){s&&(loggers[e].traceLevel=l)}))},logs.disable=function(){disabledRegexps.splice(0,disabledRegexps.length),enabledRegexps.splice(0,enabledRegexps.length);for(var e=0,l=Object.keys(loggers);e<l.length;e++){var s=l[e];loggers[s].enabled=!1}try{localStorage.removeItem("debug")}catch(e){}},logs.enable=function(e){disabledRegexps.splice(0,disabledRegexps.length),enabledRegexps.splice(0,enabledRegexps.length),processNamespaces(e=""===e?"*":e||"*",{disabledRegexps:disabledRegexps,enabledRegexps:enabledRegexps},(function(e,l){return loggers[e].enabled=l}));try{localStorage.setItem("debug",e)}catch(e){}};try{var str=localStorage.getItem("debug");str&&""!==str&&logs.enable(str)}catch(e){}for(var vars=W.location?W.location.search.slice(1).split("&"):[],_i=0,vars_1=vars;_i<vars_1.length;_i++){var variable=vars_1[_i];if(variable.startsWith("debug="))""===(val=variable.slice(6))?logs.disable():logs.enable(val);else if(variable.startsWith("log=")){var val=variable.slice(4);logs.level=logLevels[val]||parseInt(val)||logs.level}else if(variable.startsWith("trace=")){val=variable.slice(6);logs.traceLevel=logLevels[val]||parseInt(val)||logs.level}}window._logFactory=logs;
     </script>
-    <title>The first alpha was a blast!</title><meta name="title" content="The first alpha was a blast!" data-svelte="svelte-1d3d6o9"><meta name="description" content="The first alpha was a blast!" data-svelte="svelte-1d3d6o9"><meta property="og:title" content="The first alpha was a blast!" data-svelte="svelte-1d3d6o9"><meta property="og:description" content="The first alpha was a blast!" data-svelte="svelte-1d3d6o9"><meta property="og:image" content="https://conquest.eth.link/images/devlog/screenshot_alpha_1.png" data-svelte="svelte-1d3d6o9"><meta property="twitter:title" content="The first alpha was a blast!" data-svelte="svelte-1d3d6o9"><meta property="twitter:description" content="The first alpha was a blast!" data-svelte="svelte-1d3d6o9"><meta property="twitter:image" content="https://conquest.eth.link/images/devlog/screenshot_alpha_1.png" data-svelte="svelte-1d3d6o9">
+    <title>The first alpha was a blast!</title><meta name="title" content="The first alpha was a blast!" data-svelte="svelte-3ss4ce"><meta name="description" content="The first alpha was a blast!" data-svelte="svelte-3ss4ce"><meta property="og:url" content="https://conquest.eth.link/devlog/first-alpha/" data-svelte="svelte-3ss4ce"><meta property="og:type" content="website" data-svelte="svelte-3ss4ce"><meta property="og:title" content="The first alpha was a blast!" data-svelte="svelte-3ss4ce"><meta property="og:description" content="The first alpha was a blast!" data-svelte="svelte-3ss4ce"><meta property="og:image" content="https://conquest.eth.link/images/devlog/screenshot_alpha_1.png" data-svelte="svelte-3ss4ce"><meta property="twitter:card" content="summary_large_image" data-svelte="svelte-3ss4ce"><meta property="twitter:url" content="https://conquest.eth.link/devlog/first-alpha/" data-svelte="svelte-3ss4ce"><meta property="twitter:title" content="The first alpha was a blast!" data-svelte="svelte-3ss4ce"><meta property="twitter:description" content="The first alpha was a blast!" data-svelte="svelte-3ss4ce"><meta property="twitter:image" content="https://conquest.eth.link/images/devlog/screenshot_alpha_1.png" data-svelte="svelte-3ss4ce">
 
 		
 
-		<link rel="modulepreload" href="../.././_app/start-70a4978b.js">
-		<link rel="modulepreload" href="../.././_app/chunks/vendor-0274e95f.js">
+		<link rel="modulepreload" href="../.././_app/start-f399d580.js">
+		<link rel="modulepreload" href="../.././_app/chunks/vendor-8fe52820.js">
 		<link rel="modulepreload" href="../.././_app/chunks/paths-45dac81d.js">
-		<link rel="modulepreload" href="../.././_app/pages/devlog/__layout.reset.svelte-93f778d0.js">
-		<link rel="modulepreload" href="../.././_app/pages/devlog/first-alpha.md-0056ce23.js">
+		<link rel="modulepreload" href="../.././_app/pages/devlog/__layout.reset.svelte-6e1bc5b6.js">
+		<link rel="modulepreload" href="../.././_app/pages/devlog/first-alpha.md-873f36d9.js">
+		<link rel="modulepreload" href="../.././_app/chunks/blog-post-3dcd3cc5.js">
 		<link rel="modulepreload" href="../.././_app/chunks/url-92f7f1d2.js">
+		<link rel="modulepreload" href="../.././_app/chunks/stores-95dde8a7.js">
+		<link rel="modulepreload" href="../.././_app/chunks/application-e914de77.js">
 		<link rel="stylesheet" href="../.././_app/assets/start-a97448ed.css">
-		<link rel="stylesheet" href="../.././_app/assets/global-b865108a.css">
-		<link rel="stylesheet" href="../.././_app/assets/pages/devlog/first-alpha.md-f83462a4.css">
+		<link rel="stylesheet" href="../.././_app/assets/global-24ce9ba7.css">
+		<link rel="stylesheet" href="../.././_app/assets/blog-post-9740ca27.css">
 
 		<script type="module">
-			import { start } from "../.././_app/start-70a4978b.js";
+			import { start } from "../.././_app/start-f399d580.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base": window.BASE,"assets":"/."},
-				session: {posts:[{title:"The first alpha was a blast!",date:"2021-05-25T00:00:00.000Z",image:"images\u002Fdevlog\u002Fscreenshot_alpha_1.png",filename:"first-alpha.md",slug:"first-alpha"}]},
+				session: {posts:[{title:"June 2021's update",date:"2021-06-18T00:00:00.000Z",image:"images\u002Fconquest-alpha.png",filename:"june-2021-update.md",slug:"june-2021-update"},{title:"The first alpha was a blast!",date:"2021-05-25T00:00:00.000Z",image:"images\u002Fdevlog\u002Fscreenshot_alpha_1.png",filename:"first-alpha.md",slug:"first-alpha"}]},
 				host: location.host,
 				route: true,
 				spa: false,
@@ -114,8 +117,8 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("../.././_app/pages/devlog/__layout.reset.svelte-93f778d0.js"),
-						import("../.././_app/pages/devlog/first-alpha.md-0056ce23.js")
+						import("../.././_app/pages/devlog/__layout.reset.svelte-6e1bc5b6.js"),
+						import("../.././_app/pages/devlog/first-alpha.md-873f36d9.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -136,8 +139,8 @@
 
 
 
-<span class="text-white"><a href="../../" class="underline text-white m-2">Home</a> &gt;
-<a href="../../devlog/" class="underline text-white m-2">devlog</a> &gt; <span class="text-gray-400">The first alpha was a blast!</span></span>
+<div class="text-white m-3"><a href="../../" class="underline text-white m-2">Home</a> &gt;
+<a href="../../devlog/" class="underline text-white m-2">devlog</a> &gt; <span class="text-gray-400">The first alpha was a blast!</span></div>
 <div class="text-gray-100 bg-gray-900 prose prose-sm sm:max-w-xl md:max-w-2xl p-3 mx-auto"><div class="prose-dark"><div class="py-8 sm:py-10 sm:text-center"><div class="font-bold text-4xl mb-4">The first alpha was a blast!</div>
       <div class="text-sm">25/05/2021</div></div>
     <img src="../../images/devlog/screenshot_alpha_1.png" class="full-bleed" alt="Banner">
@@ -147,13 +150,13 @@
 <p>The first alpha was a blast! We had over 150 players competing over more than 2000 planets. Secret and not so secret alliances formed. It was interesting to watch. We were permanently tempted to get some coins for ourselves to join the fun :)</p>
 <p>After 3 weeks of intense war between the players, the alpha is now over and we could not be more excited to continue building conquest.eth.</p>
 <h2 id="what-did-we-learn-"><a href="#what-did-we-learn-" aria-hidden="true" tabindex="-1"><span class="icon icon-link"></span></a>What did we learn ?</h2>
-<p>The alpha was great to test our assumptions and we are glad to say that the core of the game is working as intended. Conquest has a core social element that make it unique among the current decentralised blockchain game. While the UX was pretty bare bone and lacked various utility, players could self organise and proved our main assumptions.</p>
-<p>As mentioned, the alpha was lacking terribly in term of UX. on top of that the goerli network which was losing many tx revealed the lack of robustness on the frontend. Our code had several <code>//TODO</code> related to tx handling that we assumed we did not need for our 3 weeks long alpha. We were unfortunately wrong and this caused lots of frustration to our players. We also discovered other issues related to the agent system (that should normally allow player to sleep well while their fleet travel across space).</p>
+<p>The alpha was great to test our assumptions and we are glad to say that the core of the game is working as intended. Conquest has a core social element that make it unique among the current decentralised blockchain games. While the UX was pretty bare bone and lacked various utility, players could self organise and it proved our main assumptions.</p>
+<p>As mentioned, the alpha was lacking terribly in term of UX. on top of that the goerli network which was losing many tx revealed the lack of robustness on the frontend. Our code was not intended to be full proof as we assumed we did not need that for our 3 weeks long alpha. We were unfortunately wrong and this caused lots of frustration to our players. We also discovered other issues related to the agent system (that should normally allow player to sleep well while their fleet travel across space).</p>
 <p>On top of that one of our goal with the alpha was to test how far we could go with decentralisation. The core loop was relying on <strong>zero backend</strong>. Everything was fetched from the player’s wallet node. This worked but limited the potential of the user experience. We had to add 2 new pages not possible using ethereum’s node api alone: the highscore and logs page. These 2 pages were crucial for the experience of the game. We used <a href="https://thegraph.com" rel="nofollow">thegraph.com</a> backend for this and a lot more will be added in future version to offer a much nicer experience. With such backend, decentralisation would still be preserved by letting users run their own subgraph node.</p>
 <h2 id="what-we-will-focus-next-"><a href="#what-we-will-focus-next-" aria-hidden="true" tabindex="-1"><span class="icon icon-link"></span></a>What we will focus next ?</h2>
 <p>The current focus is the next alpha. We do not have timeline for it yet, but the goal is have a far more robust experience. As such our main work for the coming weeks will be to refactor the core of the system to handle all the transaction edge case that can happen on a blockchain network with variable gas price.</p>
 <p>We will also improve the UX and offer a more visible experience when possible. As mentioned above, the plan is to make more use of subgraph to fetch data more efficiently.</p>
-<p>In term of gameplay, while the game is very simple, we are happy with the current design. Having said that, we will be looking at adding extra social feature to the core game like public alliances. We might also investigate the addition of extra features.</p>
+<p>In term of gameplay, while the game is very simple, we are happy with the current design. Having said that, we will be looking at adding extra social feature to the core game like public alliances. We might also investigate the addition of extra features. But this will come later,</p>
 <p>We will keep you posted!</p>
 <p>Thanks for reading!</p>
     </div></div>
