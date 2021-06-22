@@ -1,6 +1,6 @@
 ---
 title: June 2021's update
-date: 2021-06-18
+date: 2021-06-22
 image: images/conquest-alpha.png
 ---
 
@@ -12,7 +12,7 @@ We have been working on a major refactor of our code. While our initial focus wa
 
 To our surprise it works very well. Every planets are now `<div>` and it turns out to be more efficient. There are still some "zooming out" limitation but we can go further than before. The renderring is also a lot smoother for circles and the blockies. The other benefit is that we now have a paralax background which is great!
 
-Because we use [svelte](https://svelte.dev) for updating the UI instead of a rendering frame based loop, we now have all planet's div reactive to their respective planet changes. This make the code more elegant and make it easy to add effects, etc... plus this scales well.
+Because we use [svelte](https://svelte.dev) for updating the UI instead of a rendering frame based loop, we now have all planet's div reactive to their respective planet changes, like we do for every other UI. This make the code more elegant and make it easy to add effects, etc... plus this scales well.
 
 ## Blockchain State Handling
 
@@ -30,7 +30,7 @@ The refactor is not finished yet though and we are not yet on parity with the fi
 
 We partnered with [Outplay Games](https://outplay.games/) for a NFT drop they organised with [Paras](https://paras.id/) on the [Near network](https://near.org/) to promote and fund innovative games. We are thrilled to see these kind of initiative! There was 2 other games promoted this way too. Check it out [here](https://paras.id/opgames.near/collection)!
 
-The NFT itself has no role in our game, nor do we plan to add any functionality to it (though we never know). We see at representing a piece of history. We have 160 of these token in reserve to be given to all players that participated in the first alpha. If you are one of them, better request them as soon as you can on our [discord](https://discord.gg/Qb4gr2ekfr), because while we intend to keep it, we do not guarantee it.
+The NFT itself has no role in our game, nor do we plan to add any functionality to it. We see it as representing a piece of history. We have 160 of these token in reserve to be given to all players that participated in the first alpha. If you are one of them, better request them as soon as you can on our [discord](https://discord.gg/Qb4gr2ekfr), because while we intend to keep it, we do not guarantee it.
 
 ## Summer Break
 
